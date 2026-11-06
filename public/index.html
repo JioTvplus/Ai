@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101426">
+  <meta name="description" content="NS AI — your Kannada and English AI assistant.">
+  <title>NS AI — Your AI Assistant</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="NS AI home"><span class="brand-mark">✦</span><span>NS AI</span></a>
+      <button class="new-chat" id="newChat" type="button"><span>＋</span> New chat</button>
+      <div class="side-note">Your personal AI assistant</div>
+      <div class="language-tag">ಕನ್ನಡ <span>•</span> English</div>
+      <div class="sidebar-bottom">A little intelligence, a lot of help.</div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">✦</span> NS AI</div>
+        <div class="model-label"><span class="status-dot"></span> NS AI Assistant</div>
+        <button id="clearChat" class="clear-button" type="button" title="Clear this conversation">Clear</button>
+      </header>
+
+      <section class="chat-area" id="chatArea" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <div class="welcome-icon">✦</div>
+          <p class="eyebrow">YOUR AI ASSISTANT</p>
+          <h1>ನಮಸ್ಕಾರ! Hello there.</h1>
+          <p class="welcome-copy">I'm NS AI. Ask me anything in Kannada or English.</p>
+          <div class="suggestions">
+            <button class="suggestion" data-prompt="ಕನ್ನಡದಲ್ಲಿ ಒಂದು ಚಿಕ್ಕ ಕಥೆ ಹೇಳು">ಕನ್ನಡದಲ್ಲಿ ಒಂದು ಕಥೆ ಹೇಳು <span>↗</span></button>
+            <button class="suggestion" data-prompt="Explain artificial intelligence in simple English">Explain AI simply <span>↗</span></button>
+            <button class="suggestion" data-prompt="Help me learn five useful English words with Kannada meanings">English words with Kannada meanings <span>↗</span></button>
+            <button class="suggestion" data-prompt="Give me three creative Instagram Reel ideas">Give me Reel ideas <span>↗</span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+      </section>
+
+      <div class="composer-wrap">
+        <form id="chatForm" class="composer">
+          <textarea id="messageInput" rows="1" maxlength="4000" placeholder="Message NS AI... / NS AI ಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ" aria-label="Your message" required></textarea>
+          <button id="sendButton" class="send-button" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p class="disclaimer">NS AI can make mistakes. Check important information.</p>
+      </div>
+    </main>
+  </div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
